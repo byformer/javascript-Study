@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>特价</title>
+</head>
+<body>
+    <script>
+    //   代码结构  
+    //   语句用分号分隔:
+    alert("hello");alert('World');
+     
+    //  通常，换行符也被视为分隔符，因此也可以使用：
+
+    alert("hello");
+    alert('World');
+     
+     //在代码块{....}和语法结构中不需要分号，就像循环一样:
+     function f(){
+         //......
+     }
+     for(;;){
+
+     }
+
+
+     /* 变量 */
+      //let、const(不变，不能改变)、var（旧式,）
+     
+      /* 变量名称可以包括：
+       字母和数字，但第一个字符可能不是数字。
+       字符$和 _正常，与字母相同。
+       非拉丁字母和形象文字也是允许的，但通常不适用。
+       */
+
+       let x = 5;
+       x = "小明";
+
+       /* 
+        有七种数据类型：
+          number 数字型
+          string 字符串型
+          boolean 布尔值  （返回结果只能：true/false）,
+          null    空值  （表示不存在）
+          undefined  （表示未定义）
+          object  引用类型 （对象）
+          symbol  基本数据类型
+        */
+
+//    例外：
+        typeof null == object;
+
+        typeof function(){} == "function";
+
+    //  比较
+/*    alert(0 == false);
+   alert( a == ""); */
+   
+
+/*    循环 */
+let age = prompt('Your age?', 18);
+
+switch (age) {
+  case 18:
+    alert("Won't work"); // the result of prompt is a string, not a number
+
+  case "18":
+    alert("This works!");
+    break;
+
+  default:
+    alert("Any value not equal to one above");
+}
+console.log(age);
+    </script>
+</body>
+</html>
