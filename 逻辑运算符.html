@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>逻辑运算符</title>
+</head>
+<body>
+    <script>
+    /* 
+    // javascript中有三个逻辑运算符：
+    // 与逻辑  && 
+    //  或逻辑  ||
+    //  非逻辑  !
+     */
+      
+    //   result = a || b;
+       
+       alert(true || true) //true
+       alert(true || false) // true
+       alert(false || true) // true
+       alert(false || false) //false
+      
+    /* 一真则真 */
+   
+    //  如果操作数不是布尔值，则将其转换为布尔值进行评估。
+
+      if(1 || 0){
+          alert('hello');
+      }
+
+       
+       let hour = 9;
+       if(hour < 10 || hour > 18){
+          alert("在公司！");
+       }
+    
+
+
+    // && 与逻辑
+
+    //   result = a && b;
+
+    alert(true && true);  //true
+    alert(true && false); //fasle
+    alert(false && true); //fasle
+    alert(false && false); // fasle
+
+    /* 与或逻辑正好相反，一假则假 */
+  
+     let agego = 12;
+     let nameage = 30;
+     if(agego == 12 && nameage ==30){
+        alert("真");
+     }
+
+     /* 
+      与逻辑&&优先级高于或逻辑||
+    因此，代码a && b || c && d基本上在&&表达式在括号中相同
+     (a && b) || (c && d);
+      */
+
+
+    //   ! 非逻辑
+
+    // result = !value;
+
+    alert( !true); //false
+    alert( ! false);  // true
+
+    // 非逻辑 !  (取反)
+  
+
+    </script>
+</body>
+</html>
