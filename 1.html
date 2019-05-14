@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src=" https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <title>1</title>
+    <style>
+      .class1{
+        background:#444;
+      color:#eee;
+      }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{message}}</p>
+        <div v-html="message"></div>
+        <label for="r1">修改颜色</label><input type="checkbox" v-model="use" id="r1">
+        <br><br>
+        <div v-bind:class="{'class1':use}">
+
+            v-bind:class 指令
+        </div>
+
+    
+    </div>
+    <div id="vue_det">
+        <h1>site:{{site}}</h1>
+        <h1>url:{{url}}</h1>
+        <h1>{{details()}}</h1>
+       
+    </div>
+
+    <script>
+new Vue({
+    el:"#app",
+    data:{
+        message:'Hello,Vue.js',
+        use:false,
+    }
+})
+
+let vm = new Vue({
+    el:"#vue_det",
+    data:{
+        site:"菜鸟教程",
+        url:"www.baidu.com",
+        alexa:"10000"
+    },
+    methods:{
+        details:function(){
+            return this.site+"-学的不仅是技术，更是梦想";
+        }
+    }
+})
+
+    </script>
+    
+</body>
+
+</html>
