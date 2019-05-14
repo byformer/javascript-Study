@@ -2,4 +2,4 @@
 Notes on learning JavaScript
 
 
-没事学习
+没事学习javascript 
