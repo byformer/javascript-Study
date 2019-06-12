@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToString</title>
+</head>
+<body>
+    
+    <script>
+      function Person(name , age , gender){
+           this.name = name;
+           this.age = age;
+           this.gender = gender;
+      }    
+
+    //   创建一个Person实例
+    var per = new Person("孙悟空",18,"男");
+    //   当我们直接在页面中打印一个对象时，实际上是输出的对象是toString()方法的返回值
+     per.toString = function(){
+         return "Person[name=孙悟空,age=18 , gender=男]";
+     };
+    
+    var result = per.toString();
+      /* console.log(result); */
+    console.log(per);
+    </script>
+</body>
+</html>
